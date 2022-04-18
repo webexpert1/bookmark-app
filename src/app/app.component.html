@@ -1,0 +1,39 @@
+<div class="main-container">
+      <h1 class="title is-1">Bookmarked Articles</h1>
+      <div class="is-divider" data-content="OR"></div>
+      <h2 class="title is-3" *ngIf="!bookmarks.length">There are no bookmarked artcles</h2>
+  </div>
+  <div  *ngFor="let bookmark of bookmarks;" >
+    <app-bookmark
+      [bookmark]="bookmark"
+      (removeBookmark)="removeBookmarkedArticle($event)">
+    </app-bookmark>
+  </div>
+
+
+
+<!-- <div class="main-container" style="text-align:center">
+
+</div> -->
+<div class="articles-container">
+  <h1 class="title is-1">List of Articles</h1>
+  <div class="is-divider" data-content="OR"></div>
+</div>
+
+<hr>
+<ng-container  *ngFor="let article of articles" >
+  <app-article
+    [article]="article"
+    (addBookmark)="addArticleBoobmark($event)">
+  </app-article>
+
+</ng-container>
+
+
+
+
+
+
+
+
+

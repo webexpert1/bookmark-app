@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.main-container {
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: 60px;
+  text-align:center;
+}
+
+.articles-container {
+  width: 100%;
+  margin-left: 60px;
+  text-align:justify;
+  margin-left: 130px;
+  margin-bottom: -50px;
+}

@@ -1,0 +1,14 @@
+<div class="card">
+
+  <div class="card-content">
+    <div class="media-content">
+      <p class="title is-4by3">{{  bookmark.title  }} </p>
+    </div>
+    <div class="content">
+      {{  bookmark.description }}
+    </div>
+    <div class="columns">
+      <button (click)="removeBookmarkedArticle(bookmark)" class="button is-primary is-rounded">Remove article</button>
+    </div>
+  </div>
+</div>

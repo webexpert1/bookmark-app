@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "bulma/css/bulma.css";
+
+.app-card {
+  /* display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px; */
+}
+
+.card {
+  width: 650px !important;
+  height: 350px;
+  margin-top: 30px;
+}
+.card-content {
+  text-align: justify;
+}
+
+
+
+
+
