@@ -1,11 +1,15 @@
 <div class="card">
+  <header class="card-header">
+    <h3 class="card-header-title title">
+      {{  article.title  }}
+    </h3>
+  </header>
 
   <div class="card-content">
-    <div class="media-content">
-      <p class="title is-4by3">{{  article.title  }} </p>
+    <div class="media-content  mgb-medium">
+      <p *ngIf="article.author" class="subtitle is-4by3">Author: {{  article.author  }} </p>
     </div>
-    <div class="content">
-      {{  article.description }}
+    <div class="content mgt-large" [innerHTML]="article.description">
     </div>
     <div class="columns">
       <button (click)="addArticleBoobmark(article)" class="button is-primary is-rounded">Bookmark article</button>
