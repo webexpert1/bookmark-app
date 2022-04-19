@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:5000/api/'
+  apiUrl: 'http://localhost:5000/api/',
+  baseUrl: 'https://newsapi.org/v2/everything?q=Apple&from=2022-04-17&sortBy=popularity',
+  API_KEY: `05e44aafe69d448db6a86d46c8bb3be0`
 };
 
 /*

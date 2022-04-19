@@ -9,7 +9,7 @@
     <div class="media-content  mgb-medium">
       <p *ngIf="article.author" class="subtitle is-4by3">Author: {{  article.author  }} </p>
     </div>
-    <div class="content mgt-large" [innerHTML]="article.description">
+    <div class="content mgt-large has-text-justified" [innerHTML]="article.description">
     </div>
     <div class="columns">
       <button (click)="addArticleBookmark(article)" class="button is-primary is-rounded">Bookmark article</button>
