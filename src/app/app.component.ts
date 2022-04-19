@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
       return el.title === article.title;
     })
   }
-  addArticleBoobmark(article: Article) {
+  addArticleBookmark(article: Article) {
     const doesArticleExist = this.articleExists(article);
     if(doesArticleExist) {
       return;

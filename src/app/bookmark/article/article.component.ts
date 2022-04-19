@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Article } from '../article.model';
 
 @Component({
   selector: 'app-article',
@@ -15,7 +16,7 @@ export class ArticleComponent implements OnInit {
   ngOnInit() {
   }
 
-  addArticleBoobmark(article: Article) {
+  addArticleBookmark(article: Article) {
     this.addBookmark.emit(article)
   }
 
